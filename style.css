@@ -9,8 +9,9 @@ a {
     padding: 15px;
     margin: 15px;
     }
-h2{
+h1{
     font-weight:bold;
+    font-size: 200%;
 }
 nav{
     display:flex;
@@ -22,7 +23,7 @@ nav{
     padding: 30px; }  
 
 .nav-bar{
-    padding: 30px;
+    padding: 20px;
     align-content: flex-end;
     color: white;
     display: inline;
@@ -38,20 +39,19 @@ main{
     flex-wrap: wrap;
     display: inline;
     z-index: 1;
-   
-
 }
 img{
-    width: 250px;
+    width: 310px;
     height: 250px;
-    padding: 15px;
-    margin: 20px 0;
+    padding: 10px;
+    margin: 20px 0px;
     border: 3px solid purple;
 }
 aside{
     display: flex;
     flex-wrap:wrap;
     width: 400px;
+    height: 80%;
 }
 #headshot{
     width:300px;
@@ -66,6 +66,10 @@ footer{
 }
 #bio, label {
     font: weight 500px;
+    
+}
+#bio{
+    margin: 25px;
 }
 .contact {
     padding: 10px;
