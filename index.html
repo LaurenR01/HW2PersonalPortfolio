@@ -10,29 +10,40 @@
 <body>
 <header>
     <nav>
+        <h3 id="name">Lauren Rowe</h3>
         <ul>
             <li><a href="#webapps">Web Apps</a></li>
             <li><a href="https://github.com/LaurenR01" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/laurenrowe01/" target="_blank">LinkedIn</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <p>
+    <p anchor="#webapps">
         <ul>
             <li><a href="http://www.getlostwithlauren.com" target="_blank"><img src="GetLostLogo.jpg" alt="Get Lost with Lauren Logo"></a></li>
-            <li><a href="https://scratch.mit.edu/projects/517468440/" target="_blank"><img src=".images/FranksFriend.png" alt="Frank's Friend game photo"></a></li>
+            <li><a href="https://scratch.mit.edu/projects/517468440/" target="_blank"><img src="images/FranksFriend.png" alt="Frank's Friend game photo"></a></li>
         </ul>
     </p>
+    <aside id="right">
+        <img id="headshot" src="/images/Lauren.jpg">
+        <p id="bio">I started out coding HTML webpages for fun back in high school (iframes, anyone?).  When CSS started to beome more popular, 
+            it certainly overshadowed anything I could pull off.  Over the years, I've come back to coding to learn new skills here and there 
+            but never really spent the time outside of my other jobs to learn the ins and outs as technnology changed and improved.  Currently, 
+            I am enrolled in a coding boot camp to bring those old skills up to the present and expand on them further.  Let the adventure begin!
+        </p>
+    </aside>
 </main>
 <footer>
-    <p>Contact Me</p>
+    <p anchor="#contact">Contact Me</p>
     <form action="/action.php">
         <label for="name">Name: </label><br>
         <input type="text" id="name"><br>
         <label for="email">Email Address: </label><br>
         <input type="text" id="email"><br>
         <label for="message">Message: </label><br>
+        <input type="text" id="message"><br>
         <input type="submit" value="submit">
     </form>
 </footer>
