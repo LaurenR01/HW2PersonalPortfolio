@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lauren Rowe Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
         </style>
-<!--reset.css copied from one of the in-class exercises-->
-    <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
+<!--flexbox container 1-->
     <nav>
         <h1 id="name">Lauren Rowe</h1>
         <ul>
@@ -23,25 +23,30 @@
             <li class="nav-bar"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <!--end flexbox container 1-->
 </header>
+<!--flexbox container 2-->
 <main>
-    <div anchor="#webapps"> 
+    <!--flexbox container 3-->
+    <div anchor="#webapps" class="web-apps"> 
     <p>
         <ul>
-            <li class="web-apps"><a href="http://www.getlostwithlauren.com" target="_blank"><img src="images/GetLostLogo.png" width="500px" alt="Get Lost with Lauren Logo"></a></li>
-            <li class="web-apps"><a href="https://scratch.mit.edu/projects/517468440/" target="_blank"><img src="images/FranksFriend.png" alt="Frank's Friend game photo"></a></li>
-            <li class="web-apps"><a href="http://www.placeholder.com" target="_blank"><img src="https://via.placeholder.com/300" alt="Placeholder 1"></a></li>
-            <li class="web-apps"><a href="http://www.placeholder.com" target="_blank"><img src="https://via.placeholder.com/300" alt="Placeholder 2"></a></li>
+            <li class="cards"><a href="http://www.getlostwithlauren.com" target="_blank"><img src="images/GetLostLogo.png" width="500px" alt="Get Lost with Lauren Logo"></a></li>
+            <li class="cards"><a href="https://scratch.mit.edu/projects/517468440/" target="_blank"><img src="images/FranksFriend.png" alt="Frank's Friend game photo"></a></li>
+            <li class="cards"><a href="http://www.placeholder.com" target="_blank"><img src="https://via.placeholder.com/300" alt="Placeholder 1"></a></li>
+            <li class="cards"><a href="http://www.placeholder.com" target="_blank"><img src="https://via.placeholder.com/300" alt="Placeholder 2"></a></li>
         </ul>
     </p></div>
+    <!--flexbox container 4-->
     <aside id="right">
         <img id="headshot" src="images/Lauren.jpg" alt="photo of Lauren Rowe">
         <p id="bio">I started out coding HTML webpages for fun back in high school (&lt;frames>, anyone?).  When CSSstarted to beome more popular, it certainly overshadowed anything I could pull off.  Over the years, I've come back to coding to learn new skills here and there but never really spent the time outside of my other jobs to learn the ins and outs as technnology changed and improved.  Currently, I am enrolled in a coding boot camp to bring those old skills up to the present and expand on them further.  Let the adventure begin!
         </p>
     </aside>
 </main>
+<!--flexbox container 5-->
 <footer>
-    <p anchor="#contact">Contact Me</p>
+    <p anchor="#contact" class="contact">Contact Me</p>
     <form action="/action.php">
         <label for="name">Name: </label><br>
         <input type="text" id="name"><br>
