@@ -1,0 +1,14 @@
+nav{
+    display:flex;
+    background-color: purple;
+    
+}
+#name{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 20px;
+    padding: px; 
+    align-content: center;}  
+li{
+    display: inline;
+    justify-content: flex-end;}
