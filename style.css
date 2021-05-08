@@ -1,14 +1,59 @@
+body{
+    width:1200px;
+    background-color:silver;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    color:white;
+    font-weight:bold;
+    }
+h2{
+    font-weight:bold;
+}
 nav{
     display:flex;
     background-color: purple;
-    
-}
-#name{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-content: center;
+    justify-content: space-between;
     color: white;
     margin: 20px;
-    padding: px; 
-    align-content: center;}  
+    padding: 30px; }  
+.nav-bar{
+    padding: 30px;
+    align-content: flex-end;
+    color: white;
+}
+main{
+
+    display: flex;
+}
+#webapps{
+    display:flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+
+}
 li{
     display: inline;
-    justify-content: flex-end;}
+  }
+img{
+    padding: 20px;
+    margin: 20px;
+}
+#right{
+    display: flex;
+    justify-content: center;
+    align-content:inherit;
+    width: 350px;
+    height: 450px;
+    flex-wrap: wrap;
+    flex-grow:1;
+    flex-shrink:1;
+    flex-basis: 350px;
+}
+#headshot{
+    width:300px;
+    margin: 25px;
+    padding: 25px;
+}
