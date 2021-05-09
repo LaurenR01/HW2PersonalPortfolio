@@ -3,6 +3,7 @@ body{
     background-color:silver;
     font-family: 'Montserrat', sans-serif;
 }
+/*Flexbox Container 1*/
 a {
     color:white;
     font-weight:bold;
@@ -24,41 +25,36 @@ nav{
     flex-shrink: 1;}  
 
 .nav-bar{
-    padding: 20px;
+    padding: 20px, 0px;
     align-content: flex-end;
     color: white;
     display: inline;
 }
 .nav-bar:hover{
     background-color:violet;
+    padding: 10px;
 }
+/* Flexbox Container 2 */
 main{
     display: flex;
+    width: 1200px;
 }
+/* Nested Flexbox Container 3 Holding Cards */
 .web-apps{
+    width: 800px;
     justify-content: space-around;
     flex-shrink: 0;
+    display: inline-flex;
 }
 
 .cards{
     flex-wrap: wrap;
     display: inline;
     z-index: 1;
-}
-.hover-image{
-    position: relative;
     width: 310px;
     height: 250px;
-}
-.hover.description{
-    position: absolute;
-    margin: 0;
-    color:white;
-    visibility: hidden;
-}
-.hover-image:hover title{
-    visibility: visible;
-    opacity:1;
+    text-align: center;
+
 }
 .cards:hover{
     opacity: .5;
@@ -70,35 +66,43 @@ img{
     margin: 20px 0px;
     border: 3px solid purple;
 }
+/* Nested Container 4 Holding photo and bio */
 aside{
-    display: flex;
+    justify-content: right;
     flex-wrap:wrap;
     width: 400px;
     height: 80%;
 }
 #headshot{
+    
     width:300px;
     height: 400px;
     margin: 25px;
     padding: 25px;
 }
+#bio{
+    
+    margin: 25px 15px;
+    padding: 25px 15px;
+}
+/* Container 5 */
 footer{
-    margin: 50px;
-    padding: 50px;
-    border: 3px solid purple;
+    margin: 0px;
+    padding: 0px 50px;
+    background-color: purple;
+    color: white;
 }
 #bio, label {
     font: weight 500px;
     
 }
-#bio{
-    margin: 25px;
-}
+
 .contact {
     padding: 10px;
     margin: 10px;
 }
 
+/* Media query */
 @media screen and (max-width: 600px) {
     .web-apps, aside{
         width: 75%;
