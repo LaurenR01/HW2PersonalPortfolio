@@ -37,7 +37,7 @@ main{
 }
 .web-apps{
     justify-content: space-around;
-    flex-shrink: 1;
+    flex-shrink: 0;
 }
 
 .cards{
@@ -50,14 +50,13 @@ main{
     width: 310px;
     height: 250px;
 }
-.hover-description{
+.hover.description{
     position: absolute;
     margin: 0;
-    background-color: lightgray;
     color:white;
     visibility: hidden;
 }
-.hover-image:hover .hover-description{
+.hover-image:hover title{
     visibility: visible;
     opacity:1;
 }
