@@ -20,7 +20,8 @@ nav{
     justify-content: space-between;
     color: white;
     margin: 20px;
-    padding: 30px; }  
+    padding: 30px; 
+    flex-shrink: 1;}  
 
 .nav-bar{
     padding: 20px;
@@ -28,17 +29,40 @@ nav{
     color: white;
     display: inline;
 }
+.nav-bar:hover{
+    background-color:violet;
+}
 main{
     display: flex;
 }
 .web-apps{
     justify-content: space-around;
+    flex-shrink: 1;
 }
 
 .cards{
     flex-wrap: wrap;
     display: inline;
     z-index: 1;
+}
+.hover-image{
+    position: relative;
+    width: 310px;
+    height: 250px;
+}
+.hover-description{
+    position: absolute;
+    margin: 0;
+    background-color: lightgray;
+    color:white;
+    visibility: hidden;
+}
+.hover-image:hover .hover-description{
+    visibility: visible;
+    opacity:1;
+}
+.cards:hover{
+    opacity: .5;
 }
 img{
     width: 310px;
@@ -74,4 +98,11 @@ footer{
 .contact {
     padding: 10px;
     margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .web-apps, aside{
+        width: 75%;
+    }
+    
 }
