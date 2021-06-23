@@ -9,6 +9,7 @@ a {
     font-weight:bold;
     padding: 15px;
     margin: 15px;
+    text-decoration: none;
     }
 h1{
     font-weight:bold;
@@ -26,7 +27,8 @@ nav{
 
 .nav-bar{
     padding: 20px, 0px;
-    align-content: flex-end;
+    justify-items: flex-end;
+    align-items: center;
     color: white;
     display: inline;
 }
